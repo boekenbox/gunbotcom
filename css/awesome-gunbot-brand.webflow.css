@@ -8966,11 +8966,11 @@ html.w-mod-js *[data-ix="hide-lightbox"] {
     margin-left: 0px;
   }
   .tp-widget-rating{
-	font-size: 20px;
+	font-size: 20px !important;
   } 
   .tp-widget-logo{
-	font-size: 20px;
-	line-height: 20px;
+	font-size: 20px !important;
+	line-height: 20px !important;
   }     
 }
 
