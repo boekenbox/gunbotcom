@@ -8965,5 +8965,12 @@ html.w-mod-js *[data-ix="hide-lightbox"] {
     margin-right: 0px;
     margin-left: 0px;
   }
+  .tp-widget-rating{
+	font-size: 20px;
+  } 
+  .tp-widget-logo{
+	font-size: 20px;
+	line-height: 20px;
+  }     
 }
 
