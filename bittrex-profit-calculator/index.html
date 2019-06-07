@@ -1,124 +1,366 @@
-﻿<!DOCTYPE html>
-<!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri May 17 2019 12:43:14 GMT+0000 (UTC)  -->
-<html data-wf-page="5ba89a429ad7877e491faad8" data-wf-site="5b9779f58f2b573b4460cdbb">
+<!doctype html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Free Bittrex profit calculator | Gunbot</title>
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+	<title>Free Bittrex profit calculator | Gunbot.com</title>
   <meta content="Detailed P/L stats per trading pair ✓ Free sheet ✓ All fees deducted   &gt;  Get your copy now!" name="description">
   <meta content="Free Bittrex profit calculator | Gunbot" property="og:title">
   <meta content="Detailed P/L stats per trading pair ✓ Free sheet ✓ All fees deducted   &gt;  Get your copy now!" property="og:description">
   <meta content="summary" name="twitter:card">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
-  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="../css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="../css/awesome-gunbot-brand.webflow.css" rel="stylesheet" type="text/css">
-  <link rel="canonical" href="https://www.gunbot.com/bittrex-profit-calculator/" />
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Source Sans Pro:200,300,regular,italic,600,700,900"]  }});</script>
-  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="../images/favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
-  <link href="../images/Webclip.png" rel="apple-touch-icon">
-  <style type="text/css">
-.hs-form-iframe {
-    height:450px !important;
-}
-</style>
-  <!--  Google Tag Manager  -->
-  <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PBW7MK7');
-    </script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta content="https://www.gunbot.com/img/preview.png" property="og:image">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="canonical" href="https://www.gunbot.com/bittrex-profit-calculator/" />
+	<link rel="canonical" href="https://www.gunbot.com/binance-profit-calculator/" />
+	<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+	<link rel="icon" href="../favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+
+	<!-- themeforest:css -->
+	<link rel="stylesheet" href="../css/aos.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/cookieconsent.min.css">
+	<link rel="stylesheet" href="../css/fontawesome-all.css">
+	<link rel="stylesheet" href="../css/helper.css">
+	<link rel="stylesheet" href="../css/magnific-popup.css">
+	<link rel="stylesheet" href="../css/odometer-theme-minimal.css">
+	<link rel="stylesheet" href="../css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" href="../css/prettify.css">
+	<link rel="stylesheet" href="../css/simplebar.css">
+	<link rel="stylesheet" href="../css/smart_wizard.css">
+	<link rel="stylesheet" href="../css/smart_wizard_theme_arrows.css">
+	<link rel="stylesheet" href="../css/smart_wizard_theme_circles.css">
+	<link rel="stylesheet" href="../css/smart_wizard_theme_dots.css">
+	<link rel="stylesheet" href="../css/swiper.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<!-- endinject -->
 </head>
+
 <body>
-  <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation w-nav">
-    <div class="w-container"><a href="https://www.gunbot.com/" class="brand-link w-clearfix w-nav-brand"><img src="../images/gunbot-logo.png" width="200" alt="Official Gunbot logo" class="image-14"></a>
-      <nav role="navigation" class="nav-menu-2 w-nav-menu"><a href="https://www.gunbot.com/how-gunbot-works/" class="nav-link-2 w-nav-link">How it works</a><a href="https://www.gunbot.com/features/" class="nav-link-2 w-nav-link">Features</a><a href="https://www.gunbot.com/live-demo/" class="nav-link-2 w-nav-link">Live demo</a><a href="https://www.gunbot.com/support/" class="nav-link-2 w-nav-link">Support Community</a><a href="https://www.gunbot.com/blog/" target="_blank" class="nav-link-2 w-nav-link">Blog</a><a href="https://www.gunbot.com/get-started/" class="nav-link-2 w-nav-link">Get Started</a></nav>
-      <div class="nav-link-2 menu w-nav-button">
-        <div class="icon w-icon-nav-menu"></div>
-      </div>
-    </div>
-  </div>
-  <div class="image-hero busines-2">
-    <div class="hero-block-overlay business-2">
-      <div class="video-hero-container w-container">
-        <div class="full-hero-content-block">
-          <h1 data-ix="fade-in-on-load" class="overall-hero-title">Free profit calculator for Bittrex</h1>
-          <p data-ix="fade-in-on-load-2" class="hero-description-5">Get detailed statistics on your Bittrex trading. <br><br>See how your pairs perform and how much profit you make, all Bittrex fees are deducted in this calculator. <br><br>You need Microsoft Excel to use this calculator.<br></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="intro" class="section feature-section white">
-    <div class="container w-container"><img src="../images/bittrex-pl-calculator.png" alt="Bittrex profit calculator sheet preview" class="browser-mockup-right bittrex">
-      <div class="feature-text-block">
-        <div class="feature-intro-title">Free Binance trades tracker</div>
-        <h2 class="main-feature-title">Get per pair statistics for Bittrex</h2>
-        <p>Subscribe to our mailing list below to automatically get your free copy of the profit tracker. You&#x27;ll receive an automatic email a few minutes after subscribing.<br></p>
-        <div class="w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" action="https://wt-b6e9d873fd5dfca293560032272f1f8d-0.sandbox.auth0-extend.com/awesome-gunbot-campaigns/download/profit-calculator" method="get" class="w-clearfix"><input type="email" class="w-input" maxlength="256" name="EMAIL" data-name="EMAIL" placeholder="Enter your email" id="EMAIL-2" required=""><input type="submit" value="Subscribe" data-wait="Please wait..." class="submit-button-2 w-button"></form>
-          <div class="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div class="w-form-fail">
-            <div>Oops! Something went wrong while submitting the form.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section blue-cta-section section-3 section-4 section-5 section-6 section-7 section-8 section-9 section-10 section-11 section-12 section-13 section-14 section-15 section-16 section-17 section-18 section-19 section-20 section-21 section-22 section-23">
-    <div class="container w-container">
-      <h4 class="dark-cta-title">Got questions about Gunbot? <br>Let us know and we&#x27;ll get back to you as soon as we can.</h4><a href="https://www.gunbot.com/contact/" class="button cta-button white w-button">Contact us</a></div>
-  </div>
-  <div class="white-footer">
-    <div class="container w-container">
-      <div class="footer-row white-footer-row w-row">
-        <div class="white-footer-column w-col w-col-3">
-          <div class="dark-footer-title">Gunbot</div><a href="https://wiki.gunthy.org/" target="_blank" class="light-footer-link">Wiki</a><a href="https://gunthy.org/forum/" target="_blank" class="light-footer-link">Forum</a></div>
-        <div class="white-footer-column w-col w-col-3">
-          <div class="dark-footer-title">tools</div><a href="https://www.gunbot.com/binance-profit-calculator/" class="light-footer-link">Free Binance profit tracker</a><a href="https://www.gunbot.com/bittrex-profit-calculator/" class="light-footer-link">Free Bittrex profit tracker</a></div>
-        <div class="white-footer-column w-col w-col-3"><a href="#" class="light-footer-link"><br></a></div>
-        <div class="white-footer-column w-col w-col-3">
-          <div class="dark-footer-title">About us</div>
-          <div class="footer-contact-info-block">
-            <p>We are core Gunbot contributors and affiliates partners for gunthy.org. <br><br>This website is home to our Gunbot support community.<a href="#"><br></a></p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-row white-footer-row w-row">
-        <div class="white-footer-column w-col w-col-3">
-          <div class="dark-footer-title"><a href="https://www.gunbot.com/exchanges/" class="footerlink">Exchanges</a></div><a href="https://www.gunbot.com/exchanges/binance-trading-bot/" target="_blank" class="light-footer-link">Binance</a><a href="https://www.gunbot.com/exchanges/bitfinex-trading-bot/" target="_blank" class="light-footer-link">Bitfinex</a><a href="https://www.gunbot.com/exchanges/bitmex-trading-bot/" target="_blank" class="light-footer-link">Bitmex</a><a href="https://www.gunbot.com/exchanges/bittrex-trading-bot/" target="_blank" class="light-footer-link">Bittrex</a><a href="https://www.gunbot.com/exchanges/cex-trading-bot/" target="_blank" class="light-footer-link">Cex</a><a href="https://www.gunbot.com/exchanges/coinbase-pro-trading-bot/" target="_blank" class="light-footer-link">Coinbase Pro</a><a href="https://www.gunbot.com/exchanges/cryptopia-trading-bot/" target="_blank" class="light-footer-link">Cryptopia</a><a href="https://www.gunbot.com/exchanges/huobi-trading-bot/" target="_blank" class="light-footer-link">Huobi</a><a href="https://www.gunbot.com/exchanges/kraken-trading-bot/" target="_blank" class="light-footer-link">Kraken</a><a href="https://www.gunbot.com/exchanges/kucoin-trading-bot/" target="_blank" class="light-footer-link">KuCoin</a><a href="https://www.gunbot.com/exchanges/poloniex-trading-bot/" target="_blank" class="light-footer-link">Poloniex</a></div>
-        <div class="white-footer-column w-col w-col-3">
-          <div class="dark-footer-title"><a href="https://www.gunbot.com/trading/" class="footerlink">trading</a></div><a href="https://www.gunbot.com/trading/day-trading/" class="light-footer-link">Day trading</a><a href="https://www.gunbot.com/trading/trading-bot/" class="light-footer-link">Trading bot</a><a href="https://www.gunbot.com/trading/trading-software/" class="light-footer-link">Trading software</a><a href="https://www.gunbot.com/trading/trading-strategies/" class="light-footer-link">Trading strategies</a><a href="https://www.gunbot.com/trading/trading-system/" class="light-footer-link">Trading system</a></div>
-        <div class="white-footer-column w-col w-col-3">
-          <div class="dark-footer-title"><a href="https://www.gunbot.com/cryptocurrency/" class="footerlink">Cryptocurrency</a></div><a href="https://www.gunbot.com/cryptocurrency/investing/" class="light-footer-link">Investing</a><a href="https://www.gunbot.com/cryptocurrency/portfolio/" class="light-footer-link">Portfolio</a><a href="https://www.gunbot.com/cryptocurrency/trading-for-beginners/" class="light-footer-link">Trading for beginners</a></div>
-        <div class="white-footer-column w-col w-col-3">
-          <div class="footer-contact-info-block">
-            <p> <a href="#"><br></a></p>
-          </div>
-        </div>
-      </div>
-      <div class="bottom-footer-block white-footer-block w-clearfix">
-        <p class="bottom-footer-paragraph dark"><strong data-new-link="true">Copyright © gunbot.com 2019</strong></p>
-      </div>
-    </div>
-  </div>
-  <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="../js/webflow.js" type="text/javascript"></script>
-  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-  <!--  Google Tag Manager (noscript)  -->
-  <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBW7MK7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-  <!--  End Google Tag Manager (noscript)  -->
+	<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+	<!-- Making stripe menu -->
+	<nav class="st-nav navbar main-nav navigation fixed-top">
+		<div class="container">
+			<ul class="st-nav-menu nav navbar-nav">
+				<li class="st-nav-section nav-item">
+					<a href="https://www.gunbot.com/" class="navbar-brand">
+						<img src="../img/logo.png" alt="Dashcore" class="logo logo-sticky d-block d-md-none">
+						<img src="../img/logo-light.png" alt="Dashcore" class="logo d-none d-md-block">
+					</a>
+				</li>
+				<li class="st-nav-section st-nav-primary nav-item">
+					<a class="st-root-link nav-link" href="https://www.gunbot.com/how-gunbot-works/">How it works </a>
+					<a class="st-root-link item-products st-has-dropdown nav-link" data-dropdown="features" href="https://www.gunbot.com/features/">Features </a>
+					<a class="st-root-link nav-link" href="https://www.gunbot.com/live-demo/">Live Demo</a>
+					<a class="st-root-link nav-link" href="https://www.gunbot.com/support/">Support Community </a>
+					<a class="st-root-link nav-link" href="https://medium.com/awesomegunbot" target="_blank">Blog</a>
+				</li>
+				<li class="st-nav-section st-nav-secondary nav-item">
+					<a class="btn btn-rounded btn-solid px-3" href="https://www.gunbot.com/get-started/">
+						<i class="fas fa-user-plus d-none d-md-inline mr-md-0 mr-lg-2"></i>
+						<span class="d-md-none d-lg-inline">Get started</span>
+					</a>
+				</li>
+				<li class="st-nav-section st-nav-mobile nav-item">
+					<button class="st-root-link navbar-toggler" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="st-popup">
+						<div class="st-popup-container">
+							<a class="st-popup-close-button">Close</a>
+							<div class="st-dropdown-content-group">
+								<h4 class="text-uppercase regular">Go to:</h4>
+								<a class="regular text-primary" href="https://www.gunbot.com/">
+									<i class="fas fa-home"></i> Home </a>
+								<a class="regular text-primary" href="https://www.gunbot.com/how-gunbot-works/">
+									<i class="fas fa-question-circle"></i> How it works </a>
+								<a class="regular text-primary" href="https://www.gunbot.com/features/">
+									<i class="fas fa-chart-line"></i> Features </a>
+								<a class="regular text-primary" href="https://www.gunbot.com/live-demo/">
+									<i class="far fa-window-restore"></i> Live Demo </a>
+								<a class="regular text-primary" href="https://www.gunbot.com/get-started/">
+									<i class="fab fa-bitcoin"></i> Get started</a>
+							</div>
+													
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="st-dropdown-root">
+			<div class="st-dropdown-bg">
+				<div class="st-alt-bg"></div>
+			</div>
+			<div class="st-dropdown-arrow"></div>
+			<div class="st-dropdown-container">
+				<div class="st-dropdown-section" data-dropdown="features">
+					<div class="st-dropdown-content">
+						<div class="st-dropdown-content-group">
+							<div class="row">
+								<div class="col mr-4">
+									<a class="dropdown-item" href="https://www.gunbot.com/features#platforms">Operating systems</a>
+									<a class="dropdown-item" href="https://www.gunbot.com/features#exchanges">Supported exchanges</a>
+									<a class="dropdown-item" href="https://www.gunbot.com/features#pairs">Trading pairs</a>
+									<a class="dropdown-item" href="https://www.gunbot.com/features#gui">Browser interface</a>
+									<a class="dropdown-item" href="https://www.gunbot.com/features#strategies">Strategies</a>
+								</div>
+								<div class="col mr-4">
+									<a class="dropdown-item" href="https://www.gunbot.com/features#methods">Trading methods</a>
+									<a class="dropdown-item" href="https://www.gunbot.com/features#indicators">Confirming indicators</a>
+									<a class="dropdown-item" href="https://www.gunbot.com/features#trailing">Trailing</a>
+									<a class="dropdown-item" href="https://www.gunbot.com/features#dca">Dollar cost avg (DCA)</a>
+									<a class="dropdown-item" href="https://www.gunbot.com/features#rt">Reversal trading (RT)</a>
+								</div>
+								<div class="col">
+									<a class="dropdown-item" href="https://www.gunbot.com/features#balance">Balance settings</a>
+									<a class="dropdown-item" href="https://www.gunbot.com/features#telegram">Telegram</a>
+									<a class="dropdown-item" href="https://www.gunbot.com/features#backtesting">Backtesting add-on</a>
+									<a class="dropdown-item" href="https://www.gunbot.com/features#tradingview">TradingView add-on</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</nav>
+	<main>
+		<!-- ./Page header -->
+		<header class="page header color-1 overlay alpha-8 image-background cover gradient gradient-52" style="background-image: url('img/bg/waves.jpg')">
+			<div class="divider-shape">
+				<!-- waves divider -->
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" class="shape-waves" style="left: 0; transform: rotate3d(0,1,0,180deg);">
+					<path class="shape-fill shape-fill-1" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z" />
+				</svg>
+			</div>
+			<div class="container" style="">
+				<div class="row">
+					<div class="col-md-6">
+						<h1 class="regular display-4 color-1 mb-4">Free profit calculator for Bittrex</h1>
+						<p class="lead color-1">Get detailed statistics on your Bittrex trading. See how your pairs perform and how much profit you make, all Bittrex fees are deducted in this calculator. You need Microsoft Excel to use this calculator.</p>
+
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!-- ./Why DashCore -->
+		<section class="section">
+			<div class="container bring-to-front pb-0">
+				<div class="section-heading text-center w-75 mx-auto">
+					<h2>Get per pair statistics for Bittrex</h2>
+					<p class="lead color-2">Subscribe to our mailing list below to automatically get your free copy of the Bittrex profit tracker for Excel. You'll receive an automatic email with a download a few seconds after subscribing.</p>
+					
+				</div>
+				<div class="col-md-10 mx-md-auto">
+						<form data-name="Email Form" action="https://wt-b6e9d873fd5dfca293560032272f1f8d-0.sandbox.auth0-extend.com/awesome-gunbot-campaigns/download/profit-calculator" method="get" class="form" data-response-message-animation="slide-in-left">
+							<div class="input-group-register py-4">
+								<input type="email"  name="EMAIL" data-name="EMAIL" id="EMAIL-2" required="" class="form-control shadow-lg bg-1 form-control-rounded" placeholder="Enter your email" required="">
+								<button class="btn btn-rounded btn-accent btn-lg" type="submit">Register</button>
+							</div>
+						</form>
+						<div class="response-message">
+							<i class="fas fa-envelope font-lg"></i>
+							<p class="font-md m-0">Check your email</p>
+							<p class="response">We sent you an email with a link to get started. You’ll be in your account in no time.</p>
+						</div>
+					</div>
+					
+				<div class="shadow bg-1 p-5 rounded">
+					<nav class="nav nav-tabs tabs-clean slide d-inline-flex mb-4">
+						<a class="nav-item nav-link text-uppercase bold active" data-toggle="tab" href="#tracker">Tracker </a>
+						<a class="nav-item nav-link text-uppercase bold" data-toggle="tab" href="#positions">Open positions</a>
+					</nav>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tracker">
+							<div class="row gap-y">
+								<div class="col-lg-6">
+									<h2 class="bold mb-4">Free Bittrex trades tracker</h2>
+									<p class="lead color-2">Detailed per pair statistics for Bittrex. All you need to do is export your trade history and import it on our free sheet.
+								</div>
+								<div class="col-lg-6">
+									<figure class="px-2">
+										<img src="../img/screens/dash/bittrex-pl-calculator_1.png" class="img-responsive shadow rounded" alt="Binance profit calculator">
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="positions">
+							<div class="row gap-y">
+								<div class="col-lg-6">
+									<h2 class="bold mb-4">Supports open positions</h2>
+									<p class="lead color-2">The profit tracker attempts to automatically recognize open positions and mark these accordingly.</p>
+								</div>
+								<div class="col-lg-6">
+									<figure class="px-2">
+										<img src="../img/screens/dash/bittrex-pl-calculator_2.png" class="img-responsive shadow rounded" alt="Per pair trading stats">
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		
+
+
+		
+		
+		<!-- ./CTA - Create Account -->
+		<section class="section b-b bg-6 edge bg-6">
+			<div class="divider-shape" style="top: -80px;">
+			<!-- mountains -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style="transform: translateX(-50%) rotate3d(1,0,0,180deg);height: 80px;">
+				<path class="shape-fill shape-fill-6" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z" />
+				<path class="shape-fill shape-fill-6" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z" />
+				<path class="shape-fill shape-fill-6" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z" />
+			</svg>
+		</div>
+			<div class="container pt-5">
+				
+			</div>
+		</section>
+	</main>
+	<!-- ./Footer - Simple -->
+	<!-- ./Footer - Four Columns -->
+			<footer class="site-footer section block bg-6">
+				<div class="container py-4">
+					<div class="row gap-y text-center text-md-left">
+						
+						
+						<div class="col-md-2">
+							<h6 class="py-2 bold">Gunbot</h6>
+							<nav class="nav flex-column">
+								<a class="nav-item py-2" href="https://wiki.gunthy.org/">Wiki</a>
+								<a class="nav-item py-2" href="https://gunthy.org/forum/">Forum</a>
+								
+							</nav>
+						</div>
+						<div class="col-md-2">
+							<h6 class="py-2 bold">Free tools</h6>
+							<nav class="nav flex-column">
+								<a class="nav-item py-2" href="https://www.gunbot.com/binance-profit-calculator/">Free Binance profit tracker</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/bittrex-profit-calculator/">Free Bittrex profit tracker</a>
+
+							</nav>
+						</div>
+						<div class="col-md-2">
+							
+						</div>
+						<div class="col-md-2">
+							
+						</div>
+						<div class="col-md-4 mr-auto">
+							<img src="../img/logo.png" alt="" class="logo">
+							<p>We are core Gunbot contributors and affiliate partners for gunthy.org. This website is home to our Gunbot support community.
+</p>
+						</div>
+					</div>
+					<p></p>
+					<div class="row gap-y text-center text-md-left">
+						
+						
+						<div class="col-md-2">
+							<a href="https://www.gunbot.com/exchanges/"><h6 class="py-2 bold">Exchanges</h6></a>
+							<nav class="nav flex-column">
+								<a class="nav-item py-2" href="https://www.gunbot.com/exchanges/binance-trading-bot/">Binance</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/exchanges/bitfinex-trading-bot/">Bitfinex</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/exchanges/bitmex-trading-bot/">Bitmex</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/exchanges/bittrex-trading-bot/">Bittrex</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/exchanges/cex-trading-bot/">Cex</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/exchanges/coinbase-pro-trading-bot/">Coinbase Pro</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/exchanges/huobi-trading-bot/">Huobi</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/exchanges/kraken-trading-bot/">Kraken</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/exchanges/kucoin-trading-bot/">KuCoin</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/exchanges/poloniex-trading-bot/">Poloniex</a>
+							</nav>
+						</div>
+						<div class="col-md-2">
+							<a href="https://www.gunbot.com/trading/"><h6 class="py-2 bold">Trading</h6></a>
+							<nav class="nav flex-column">
+								<a class="nav-item py-2" href="https://www.gunbot.com/trading/day-trading/">Day trading</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/trading/trading-bot/">Trading bot</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/trading/trading-software/">Trading software</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/trading/trading-strategies/">Trading strategies</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/trading/trading-system/">Trading system</a>
+
+							</nav>
+						</div>
+						
+						<div class="col-md-2">
+							<a href="https://www.gunbot.com/cryptocurrency/"><h6 class="py-2 bold">Cryptocurrency</h6></a>
+							<nav class="nav flex-column">
+								<a class="nav-item py-2" href="https://www.gunbot.com/cryptocurrency/investing/">Investing</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/cryptocurrency/portfolio/">Portfolio</a>
+								<a class="nav-item py-2" href="https://www.gunbot.com/cryptocurrency/trading-for-beginners/">Trading for beginners</a>
+							</nav>
+						</div>
+					</div>
+					<hr class="mt-5">
+					<div class="row small align-items-center">
+						<div class="col-md-4">
+							<p class="mt-2 mb-md-0 color-2 text-center text-md-left">© 2019 gunbot.com | All Rights Reserved</p>
+						</div>
+						<div class="col-md-8">
+							<nav class="nav justify-content-center justify-content-md-end">
+								<a href="https://medium.com/awesomegunbot" class="btn btn-circle btn-sm btn-2 mr-3 op-4">
+									<i class="fab fa-medium-m"></i>
+								</a>
+								
+							</nav>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+	<!-- themeforest:js -->
+	<!-- <script src="../js/01.cookie-consent-util.js"></script> -->
+	<!-- <script src="../js/02.1.cookie-consent-themes.js"></script> -->
+	<!-- <script src="../js/02.2.cookie-consent-custom-css.js"></script> -->
+	<!-- <script src="../js/02.3.cookie-consent-informational.js"></script> -->
+	<!-- <script src="../js/02.4.cookie-consent-opt-out.js"></script> -->
+	<!-- <script src="../js/02.5.cookie-consent-opt-in.js"></script> -->
+	<!-- <script src="../js/02.6.cookie-consent-location.js"></script> -->
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery.animatebar.js"></script>
+	<script src="../js/odometer.min.js"></script>
+	<script src="../js/simplebar.js"></script>
+	<script src="../js/swiper.js"></script>
+	<script src="../js/popper.js"></script>
+	<script src="../js/jquery.easing.min.js"></script>
+	<script src="../js/jquery.validate.js"></script>
+	<script src="../js/jquery.smartWizard.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/jquery.waypoints.js"></script>
+	<script src="../js/jquery.counterup.js"></script>
+	<script src="../js/modernizr-2.8.3.min.js"></script>
+	<script src="../js/aos.js"></script>
+	<script src="../js/particles.js"></script>
+	<script src="../js/typed.js"></script>
+	<script src="../js/prettify.js"></script>
+	<script src="../js/jquery.magnific-popup.js"></script>
+	<script src="../js/cookieconsent.min.js"></script>
+	<script src="../js/common-script.js"></script>
+
+	<script src="../js/site.js"></script>
+	<script src="../js/stripe-menu.js"></script>
+	<!-- endinject -->
 </body>
+
 </html>
