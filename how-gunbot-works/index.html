@@ -163,7 +163,7 @@
 Five easy steps to get started
 </h2>
 				</div>
-				<nav class="slide nav nav-tabs nav-outlined nav-rounded justify-content-around justify-content-md-center mb-5">
+				<nav class="slide nav tabs-clean justify-content-around justify-content-md-center mb-5">
 					<a class="nav-item nav-link active" data-toggle="tab" href="#install">1. Install</a>
 					<a class="nav-item nav-link" data-toggle="tab" href="#connect">2. Connect</a>
 					<a class="nav-item nav-link" data-toggle="tab" href="#strategy">3. Strategy</a>
@@ -270,7 +270,93 @@ There are many different approaches to choose from: following trends (and trade 
 			</div>
 		</section>
 		
-		
+		<!-- ./Developers - Code snippets -->
+		<section class="section b-b b-t">
+			<div class="container">
+				<div class="section-heading text-center">
+					<h2>Developer friendly</h2>
+					<p class="lead color-2">Don't like graphical user interfaces? You can also control Gunbot with just a single JSON config file.</p>
+					<p class="color-2">Every time changes are written to the config file, Gunbot automatically starts running the updated config.</p>
+					<p class="color-2">Have a look at a few examples showing how easy it is to configure Gunbot without GUI.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-lg-3 ml-lg-auto order-md-2">
+						<nav id="sw-nav-developers" class="nav flex-md-column justify-content-between justify-content-md-start nav-pills nav-pills-light nav-fill">
+							<a class="nav-item nav-link bold text-md-left active" href="#" data-step="1">
+								<i class="icon fas fa-code"></i> Trading pairs</a>
+							<a class="nav-item nav-link bold text-md-left" href="#" data-step="2">
+								<i class="icon fab fa-code"></i> Strategy settings</a>
+							<a class="nav-item nav-link bold text-md-left" href="#" data-step="3">
+								<i class="icon fas fa-code"></i> Exchange settings</a>
+							
+						</nav>
+						
+					</div>
+					<div class="col-md-8">
+						<div class="swiper-container mt-4 mt-md-0" data-sw-navigation="#sw-nav-developers">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><pre class="prettyprint lang-js linenums">
+"pairs": {
+	"binance": {
+		"USDT-BTC": {
+		"strategy": "SMACROSS",
+		"enabled": true,
+		"override": {
+			"TRADING_LIMIT": 1000
+			}
+		}
+	}
+},
+                </pre></div>
+								<div class="swiper-slide"><pre class="prettyprint lang-js linenums">
+"strategies": {
+        "ADX": {
+            "BUY_METHOD": "ADX",
+            "BUY_ENABLED": true,
+            "SELL_METHOD": "ADX",
+            "SELL_ENABLED": true,
+            "BUY_LEVEL": 1,
+            "GAIN": 0.5,
+            "DOUBLE_CHECK_GAIN": true,
+            
+			...
+			
+            "ATRX": 0.5,
+            "ATR_PERIOD": 14,
+            "BTC_PND_PROTECTION": false,
+            "BTC_MONEY_FLOW": 35,
+            "BTC_PND_PERIOD": 14,
+            "CANDLES_LENGTH": 99,
+            "EMA1": 16,
+            "EMA2": 8,
+            "EMA_LENGTH": 50,
+            "EMASPREAD": false,
+            "EMAx": 0.5,
+            "FAST_SMA": 1,
+            "SLOW_SMA": 2,
+            "HIGH_BB": 0,
+            "LOW_BB": 0,
+            "SMAPERIOD": 50,
+        },
+            </pre></div>
+								<div class="swiper-slide"><pre class="prettyprint lang-js linenums">
+"exchanges": {
+        "huobi": {
+            "key": "trading api key",
+            "secret": "api secret",
+            "masterkey": "registered api key",
+            "mastersecret": "api secret",
+            "type": "huobi",
+            "delay": 1
+        },
+                            </pre></div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 		
