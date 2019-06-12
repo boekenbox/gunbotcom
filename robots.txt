@@ -1,5 +1,8 @@
 User-agent: ia_archiver
 Disallow: /
 
+User-agent: *
+Disallow: /join/
+
 # Sitemap files
 Sitemap: https://www.gunbot.com/sitemap.xml
