@@ -177,6 +177,7 @@
 		<a href="#telegram" title="Telegram integration"><button type="button" class="btn-onpagenav btn-rounded btn-outline-dark">Telegram</button></a>
 		<a href="#backtesting" title="Backtesting on TradingView"><button type="button" class="btn-onpagenav btn-rounded btn-outline-dark">Backtesting</button></a>
 		<a href="#tradingview" title="Trade using email alerts"><button type="button" class="btn-onpagenav btn-rounded btn-outline-dark">TradingView</button></a>
+		<a href="#autoconfig" title="Automatically add pairs & many more automation options"><button type="button" class="btn-onpagenav btn-rounded btn-outline-dark">AutoConfig</button></a>
 		
 		</section>
 		
@@ -216,6 +217,7 @@
 			<p class="badge badge-success bold">Major exchange support</p>
 				<h2>Supported exchanges</h2>
 				<p class="lead color-2">Gunbot can trade on a number of different exchanges and offers almost the same functionality on all of them. New exchanges are regularly added.</p>
+				<p class="lead color-2"><strong>NEW:</strong> all <a href="https://github.com/ccxt/ccxt/wiki/Exchange-Markets" title="Gunbot supports all ccxt compatible spot exchanges">100+ spot trading exchanges from the ccxt library</a> are now supported.</p>
 				<p>Gunbot can trade on multiple exchange simultaneously.<br><br></p>
 				<table class="table table-hover">
 							<thead>
@@ -267,14 +269,14 @@
 									<td><i class="pe pe-2x pe-7s-close-circle color-2"></i></td>
 								</tr>
 								<tr>
+									<th scope="row">HitBTC</th>
+									<td><i class="pe pe-2x pe-7s-check color-4"></i></td>
+									<td><i class="pe pe-2x pe-7s-close-circle color-2"></i></td>
+								</tr>
+								<tr>
 									<th scope="row">Huobi Global</th>
 									<td><i class="pe pe-2x pe-7s-check color-4"></i></td>
 									<td>With TradingView alerts</td>
-								</tr>
-								<tr>
-									<th scope="row">Idax</th>
-									<td><i class="pe pe-2x pe-7s-check color-4"></i></td>
-									<td><i class="pe pe-2x pe-7s-close-circle color-2"></i></td>
 								</tr>
 								<tr>
 									<th scope="row">Kraken</th>
@@ -342,14 +344,9 @@
 				<p>The main components of a strategy are buy and sell methods, which define when the bot is allowed to place orders. Strategies can be assigned to one or more trading pairs.</p>
 				<p>Gunbot comes with many free strategy presets, these are ready to use after making minimal changes - like configuring how much it is allowed to spend.
 You can create an unlimited number of custom strategies.</p>
+<p>Gunbot comes with specially adapted strategies for margin trading, you can choose between mean reversion or trend following variants of individual strategies. With ROE trailing you can maximize profit from any position.</p>
 <p>Every strategy can use a number of protections, like setting custom gain and stop limit values, limiting the number of sell orders before trading is halted, prevent buy orders above the last sell rate to protect against buying in surging markets.<br><br></p>
-<p><strong>New in v12:</strong></p>
-						<ul>
-						<li>Strategies for margin trading close at a defined ROE level, and can trail ROE upwards to get the most out of a position</li>
-						<li>Option to chose between using limit or market orders, configurable per order type</li>
-						<li>Place orders as post only at Bitmex</li>
-						<li>Manipulate limit order rate with "pre order gap" at Bitmex: instead of placing orders at bid or ask, you can configure a percentage below or above that rate</li>
-						</ul>
+
 				
 			</div>
 		</section>
@@ -363,11 +360,6 @@ You can create an unlimited number of custom strategies.</p>
 				<p>Methods are the main trigger for an order. Additionally you can use a set of confirming indicators to specify the conditions you want to allow trading for. Every method can use a configurable stop limit to reduce your risk exposure.</p>
 				<p>A wide range of candlestick periods can be used. Select methods allow for pyramid buying.<br><br></p>
 
-<p><strong>New in v12:</strong></p>
-						<ul>
-						<li>When using Ichimoku for margin trading, you can optionally use renko candles</li>
-						<li>Optimized for margin trading: trading methods available as both trend following and mean reversion variants<br><br></li>
-						</ul>
 						
 				<table class="table table-hover">
 							<thead>
@@ -456,7 +448,7 @@ You can create an unlimited number of custom strategies.</p>
 						<h2>Confirming indicators</h2>
 						<p class="lead color-2">To refine your trading strategy, you can configure confirming indicators which restrict your buy/sell method to trading only when certain indicators are within a range you configure. </p>
 						<p>For example: only allow buy orders when RSI is 30 or lower. The period settings for every indicator are fully configurable.</p>
-						<p>Available confirming indicators:</p>
+						<p>Available confirming indicators, natively available in strategies:</p>
 						<ul>
 						<li>ADX
 						<li>EMA
@@ -465,6 +457,7 @@ You can create an unlimited number of custom strategies.</p>
 						<li>RSI
 						<li>Stochastic
 						<li>StochRSI
+						<li>Optional: configure custom indicator combinations using any of the <a href="https://tulipindicators.org/list" title="Gunbot support the full Tulip indicator library">indicators in the Tulip library.</a>
 						</ul>
 					</div>
 					<div class="col-10 col-lg-6 pr-0">
@@ -650,6 +643,18 @@ You can create an unlimited number of custom strategies.</p>
 						<p>This allows for fully custom strategies, using pine script at TradingView. The add-on allows for a few protections, like making sure sell orders happen above the break-even point and meet the exchange minimum trade volume. 
 </p>
 						<p>The add-on can be used in a mixed mode too, where both a Gunbot strategy is executed and TradingView alerts are being executed.
+</p>
+			</div>
+		</section>
+		<section class="section terms" id="Autoconfig">
+			<div class="container pt-md-9">
+			<p class="badge badge-success bold">Insane automation</p>
+				<h2>AutoConfig</h2>
+						<p class="lead color-2">Manage your bot automatically with AutoConfig
+</p>
+						<p>AutoConfig is a suite of tools you can use to dynamically manage your Gunbot configuration. Do you want to trade only the top10 pairs by 24h trading volume? AutoConfig can fully automate that, and a lot more advanced pair filters are available too.
+</p>
+						<p>Almost every aspect of the configuration can be automated with filter rules you define yourself. This even allows for automating strategy aspects, for example trade with a dynamic gain target. You can even monitor conditions on one pair and change settings on another. 
 </p>
 			</div>
 		</section>
