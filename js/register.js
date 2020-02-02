@@ -118,7 +118,7 @@ $(function($) {
         }
 
 			function redirectSuccess() {
-  location.replace("https://www.gunbot.com/success-backtesting/")
+  location.replace("https://www.gunbot.com/registered/")
 };
 		
         function submitAjax($form) {
