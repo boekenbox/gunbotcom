@@ -122,9 +122,30 @@ $(function($) {
 };
 		
         function submitAjax($form) {
+           
+
+            var formSerialized = $form.serializeArray();
+
+            var formData = []
+
+            formSerialized.forEach((item) => {
+
+                if(item.value == ''){
+
+                    item.value = Math.random().toString(36).substr(2, 20);
+                
+                }
+
+                formData.push(item)
+                
+
+            });
+
+
             doAjax(
                 $form.attr('action'),
-                $form.serializeArray(),
+                formData,
+                
             );
 			setTimeout(redirectSuccess, 2000);
         }
