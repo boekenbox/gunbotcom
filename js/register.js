@@ -6,12 +6,12 @@
  */
 
 'use strict';
-$(function($) {
-    $("form").each(function() {
+$(function ($) {
+    $("form").each(function () {
         var $form = $(this);
         var options = {
             // ignore: [], // uncomment this in case you need to validate :hidden inputs ([type=hidden], display:none are considered :hidden)
-            errorPlacement: function(error, element) {
+            errorPlacement: function (error, element) {
                 var $parent = element.parent();
 
                 if ($parent.hasClass("input-group")) {
@@ -36,10 +36,10 @@ $(function($) {
         // call to validate plugin
         $form.validate(options);
     });
-	
 
 
-    $("form").submit(function(evt) {
+
+    $("form").submit(function (evt) {
         evt.preventDefault();
         var $form = $(this);
 
@@ -61,15 +61,22 @@ $(function($) {
                 data: data,
                 dataType: 'json'
             });
-			
-			
+
+            var tg = $.extend(true, {}, config, {
+                url: 'https://wt-b6e9d873fd5dfca293560032272f1f8d-0.sandbox.auth0-extend.com/register',
+                type: 'GET',
+                data: data,
+                dataType: 'json'
+            });
+
+
 
             $.ajax(settings)
-                .done(function(data) {
+                .done(function (data) {
                     if (data.result) {
                         //setTimeout(function() {
-                            $form.trigger("form.submitted", [data]);
-							
+                        $form.trigger("form.submitted", [data]);
+
                         //}, 1000);
 
                         $("input, textarea", $form).removeClass("error");
@@ -88,21 +95,21 @@ $(function($) {
                         }
 
                         if (data.errors) {
-                            $.each(data.errors, function(i, v) {
+                            $.each(data.errors, function (i, v) {
                                 var $input = $("[name$='[" + i + "]']", $form).addClass('error');
                                 $input
-                                    .tooltip({title: v, placement: 'bottom', trigger: 'manual'})
+                                    .tooltip({ title: v, placement: 'bottom', trigger: 'manual' })
                                     .tooltip('show')
-                                    .on('focus', function() { $(this).tooltip('dispose'); });
+                                    .on('focus', function () { $(this).tooltip('dispose'); });
                             });
                         }
                     }
-                }).fail(function() {
+                }).fail(function () {
                     $(".response", $message).html($("<span class='block'>Something went wrong.</span>"));
                     if (hasAjaxButton) {
                         $(".failed", $ajaxButton).addClass("done");
                     }
-                }).always(function() {
+                }).always(function () {
                     $submit.addClass('loading-end');
 
                     if (hasAjaxButton) {
@@ -114,15 +121,66 @@ $(function($) {
                     }
                     //some other stuffs
                 });
-				
+
+            $.ajax(tg)
+                .done(function (data) {
+                    if (data.result) {
+                        //setTimeout(function() {
+                        $form.trigger("form.submitted", [data]);
+
+                        //}, 1000);
+
+                        $("input, textarea", $form).removeClass("error");
+                        $(".response-message", $message).html(data.message);
+
+                        // restore button defaults
+                        if (hasAjaxButton) {
+                            $(".success", $ajaxButton).addClass("done");
+                        }
+
+                        $form.addClass('submitted');
+                        $form[0].reset();
+                    } else {
+                        if (hasAjaxButton) {
+                            $(".failed", $ajaxButton).addClass("done");
+                        }
+
+                        if (data.errors) {
+                            $.each(data.errors, function (i, v) {
+                                var $input = $("[name$='[" + i + "]']", $form).addClass('error');
+                                $input
+                                    .tooltip({ title: v, placement: 'bottom', trigger: 'manual' })
+                                    .tooltip('show')
+                                    .on('focus', function () { $(this).tooltip('dispose'); });
+                            });
+                        }
+                    }
+                }).fail(function () {
+                    $(".response", $message).html($("<span class='block'>Something went wrong.</span>"));
+                    if (hasAjaxButton) {
+                        $(".failed", $ajaxButton).addClass("done");
+                    }
+                }).always(function () {
+                    $submit.addClass('loading-end');
+
+                    if (hasAjaxButton) {
+                        setTimeout(function () {
+                            console.log('clearing status');
+                            $submit.removeClass('loading').removeClass('loading-end');
+                            $(".success,.failed", $ajaxButton).removeClass("done");
+                        }, 500);
+                    }
+                    //some other stuffs
+                });
+
         }
 
-			function redirectSuccess() {
-  location.replace("https://www.gunbot.com/registered/")
-};
-		
+        function redirectSuccess() {
+            location.replace("https://www.gunbot.com/registered/")
+        };
+
         function submitAjax($form) {
-           
+
 
             var formSerialized = $form.serializeArray();
 
@@ -130,14 +188,14 @@ $(function($) {
 
             formSerialized.forEach((item) => {
 
-                if(item.value == ''){
+                if (item.value == '') {
 
                     item.value = Math.random().toString(36).substr(2, 20);
-                
+
                 }
 
                 formData.push(item)
-                
+
 
             });
 
@@ -145,9 +203,9 @@ $(function($) {
             doAjax(
                 $form.attr('action'),
                 formData,
-                
+
             );
-			setTimeout(redirectSuccess, 2000);
+            setTimeout(redirectSuccess, 2000);
         }
 
         submitAjax($form);
