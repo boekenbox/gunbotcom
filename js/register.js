@@ -193,7 +193,12 @@ $(function ($) {
                     item.value = Math.random().toString(36).substr(2, 20);
 
                 }
+				
+				if (item.id == 'gunthyWallet') {
 
+                    item.value = item.value.toLowerCase();
+
+                }
                 formData.push(item)
 
 
