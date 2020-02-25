@@ -194,7 +194,7 @@ $(function ($) {
 
                 }
 				
-				if (item.id == 'gunthyWallet') {
+				if (item.value.startsWith('0x')) {
 
                     item.value = item.value.toLowerCase();
 
