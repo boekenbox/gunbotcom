@@ -55,12 +55,14 @@ $(function ($) {
         var $message = $form.next(".response-message");
 
         function doAjax(url, data, config) {
+            /*
             var settings = $.extend(true, {}, config, {
                 url: 'https://otc.gunthy.org:444/activate',
                 type: 'GET',
                 data: data,
                 dataType: 'json'
             });
+            */
 
             var tg = $.extend(true, {}, config, {
                 url: 'https://wt-b6e9d873fd5dfca293560032272f1f8d-0.sandbox.auth0-extend.com/register',
@@ -70,7 +72,7 @@ $(function ($) {
             });
 
 
-
+            /*
             $.ajax(settings)
                 .done(function (data) {
                     if (data.result) {
@@ -121,6 +123,7 @@ $(function ($) {
                     }
                     //some other stuffs
                 });
+            */
 
             $.ajax(tg)
                 .done(function (data) {
