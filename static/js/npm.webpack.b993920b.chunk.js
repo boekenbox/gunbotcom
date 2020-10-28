@@ -1,0 +1,1 @@
+(this["webpackJsonpGunbot.com"]=this["webpackJsonpGunbot.com"]||[]).push([[45],{30:function(t,n){var o=function(){return this}();try{o=o||Function("return this")()}catch(t){"object"==typeof window&&(o=window)}t.exports=o}}]);
