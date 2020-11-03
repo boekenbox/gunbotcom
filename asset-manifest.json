@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5350e6bb.chunk.css",
-    "main.js": "/static/js/main.d031cc2c.chunk.js",
+    "main.js": "/static/js/main.9e61fc28.chunk.js",
     "npm.babel.js": "/static/js/npm.babel.8d5004c4.chunk.js",
     "npm.babel-preset-react-app.js": "/static/js/npm.babel-preset-react-app.f841b5fe.chunk.js",
     "npm.emotion.js": "/static/js/npm.emotion.d45701ab.chunk.js",
@@ -52,7 +52,7 @@
     "npm.webpack.js": "/static/js/npm.webpack.b993920b.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.d4d9c004.js",
     "index.html": "/index.html",
-    "precache-manifest.a3c20b70b9df2e7c94c831bada3c21ed.js": "/precache-manifest.a3c20b70b9df2e7c94c831bada3c21ed.js",
+    "precache-manifest.7e3ce85c58bec609d22b6554599ce9a7.js": "/precache-manifest.7e3ce85c58bec609d22b6554599ce9a7.js",
     "service-worker.js": "/service-worker.js",
     "static/media/activity.svg": "/static/media/activity.ec2ea5c1.svg",
     "static/media/add-pairs.png": "/static/media/add-pairs.768efa07.png",
@@ -160,6 +160,6 @@
     "static/js/npm.warning.cde660b6.chunk.js",
     "static/js/npm.webpack.b993920b.chunk.js",
     "static/css/main.5350e6bb.chunk.css",
-    "static/js/main.d031cc2c.chunk.js"
+    "static/js/main.9e61fc28.chunk.js"
   ]
 }
