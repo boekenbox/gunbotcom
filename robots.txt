@@ -1,3 +1,7 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+Sitemap: https://www.gunbot.com/sitemap.xml
+User-Agent: *
+Disallow:/request-backtesting/
+Disallow:/register1/
+Disallow:/register3/
+Disallow:/register5/
+Disallow:/join/
