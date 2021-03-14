@@ -7,4 +7,3 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Vary: Accept-Encoding
   Referrer-Policy: no-referrer
-  Content-Security-Policy: default-src 'none'; object-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; font-src 'self';
