@@ -7,3 +7,4 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Vary: Accept-Encoding
   Referrer-Policy: no-referrer
+  Content-Security-Policy: default-src 'self'; script-src 'report-sample' 'self' https://d33wubrfki0l68.cloudfront.net/bundles/ddf01a5d1a1c0a61e0b4c88f537172433bdf99b3.js; style-src 'report-sample' 'self' https://d33wubrfki0l68.cloudfront.net https://fonts.googleapis.com; object-src 'none'; base-uri 'self'; connect-src 'self'; font-src 'self' https://fonts.gstatic.com; frame-src 'self'; img-src 'self' https://d33wubrfki0l68.cloudfront.net; manifest-src 'self'; media-src 'self'; worker-src 'none';
