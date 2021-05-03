@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.57216aba.chunk.css",
-    "main.js": "/static/js/main.f9a298d0.chunk.js",
-    "main.js.map": "/static/js/main.f9a298d0.chunk.js.map",
+    "main.js": "/static/js/main.3e3d9294.chunk.js",
+    "main.js.map": "/static/js/main.3e3d9294.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.87c223fc.js",
     "runtime-main.js.map": "/static/js/runtime-main.87c223fc.js.map",
     "static/css/2.5d59cd58.chunk.css": "/static/css/2.5d59cd58.chunk.css",
@@ -50,8 +50,8 @@
     "static/media/multi-platform.18848f6e.png": "/static/media/multi-platform.18848f6e.png",
     "static/media/package.svg": "/static/media/package.52c71e7e.svg",
     "static/media/pairs-mobile.052a489d.png": "/static/media/pairs-mobile.052a489d.png",
-    "static/media/partners-logo-strip-inverted.562104da.png": "/static/media/partners-logo-strip-inverted.562104da.png",
-    "static/media/partners-logo-strip.dbf95e60.png": "/static/media/partners-logo-strip.dbf95e60.png",
+    "static/media/partners-logo-strip-inverted.7d251b73.png": "/static/media/partners-logo-strip-inverted.7d251b73.png",
+    "static/media/partners-logo-strip.cc4c3492.png": "/static/media/partners-logo-strip.cc4c3492.png",
     "static/media/pnl-large.8ff127a1.png": "/static/media/pnl-large.8ff127a1.png",
     "static/media/profit-calculator-1.e151e1c8.png": "/static/media/profit-calculator-1.e151e1c8.png",
     "static/media/profit-calculator-2.fcb4453f.png": "/static/media/profit-calculator-2.fcb4453f.png",
@@ -75,6 +75,6 @@
     "static/css/2.5d59cd58.chunk.css",
     "static/js/2.dc091446.chunk.js",
     "static/css/main.57216aba.chunk.css",
-    "static/js/main.f9a298d0.chunk.js"
+    "static/js/main.3e3d9294.chunk.js"
   ]
 }
