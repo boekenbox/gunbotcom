@@ -5,3 +5,9 @@ Disallow:/register1/
 Disallow:/register3/
 Disallow:/register5/
 Disallow:/join/
+
+User-agent: archive.org_bot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
