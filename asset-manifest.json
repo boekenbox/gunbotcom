@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.6bf4d7d1.chunk.css",
-    "main.js": "/static/js/main.bf5caaef.chunk.js",
-    "main.js.map": "/static/js/main.bf5caaef.chunk.js.map",
+    "main.js": "/static/js/main.af4fd10b.chunk.js",
+    "main.js.map": "/static/js/main.af4fd10b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.87c223fc.js",
     "runtime-main.js.map": "/static/js/runtime-main.87c223fc.js.map",
     "static/css/2.388e61b4.chunk.css": "/static/css/2.388e61b4.chunk.css",
@@ -34,7 +34,7 @@
     "static/media/exit-manager.43d95056.png": "/static/media/exit-manager.43d95056.png",
     "static/media/grid.svg": "/static/media/grid.8a18c96e.svg",
     "static/media/gunbot-interface.9976daa2.png": "/static/media/gunbot-interface.9976daa2.png",
-    "static/media/hero-image4.b882cf71.png": "/static/media/hero-image4.b882cf71.png",
+    "static/media/hero-image4.0cd73ae3.png": "/static/media/hero-image4.0cd73ae3.png",
     "static/media/indicators-large.7c37df5e.png": "/static/media/indicators-large.7c37df5e.png",
     "static/media/layers.svg": "/static/media/layers.545d0f51.svg",
     "static/media/liquidity-provider.5318c2be.png": "/static/media/liquidity-provider.5318c2be.png",
@@ -75,6 +75,6 @@
     "static/css/2.388e61b4.chunk.css",
     "static/js/2.44827ede.chunk.js",
     "static/css/main.6bf4d7d1.chunk.css",
-    "static/js/main.bf5caaef.chunk.js"
+    "static/js/main.af4fd10b.chunk.js"
   ]
 }
